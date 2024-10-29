@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="scf.css">
+</head>
+<body>
+    <h1>Special Care Instructions</h1>
+
+    <table class="first-table">
+      <tr>
+        <td class="no-border">PI: <input type="text" id="contact-input"></td>
+        <td class="no-border">Facility: <input type="text" id="contact-input"></td>
+      </tr>
+      <tr>
+        <td class="no-border">Protocol #: <input type="text" id="contact-input"></td>
+        <td class="no-border">Room: <input type="text" id="contact-input"></td>
+      </tr>
+    </table>
+
+    <h3 class="tan-header">Duration of Special Care:</h3>
+   
+    <table>
+      <tr>
+        <td class="no-border"><b>Start: </b><input type="text" id="contact-input"></td>
+        <td class="no-border"><b>End: </b><input type="text" id="contact-input"></td>
+      </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th class="tan-cell">Primary Contact</th>
+            <th class="tan-cell">Alternate Contact</th>
+        </tr>
+        <tr>
+            <td>Name: <input type="text" id="contact-input"></td>
+            <td>Name: <input type="text" id="contact-input"></td>
+        </tr>
+        <tr>
+            <td class="smaller-td-font">Mobile Phone #: <input type="text" id="contact-input"></td>
+            <td class="smaller-td-font">Mobile Phone #: <input type="text" id="contact-input"></td>
+        </tr>
+    </table>
+
+    <h3 class="tan-header">Special Care Instructions:</h3>
+    <ul>
+      <li> Check and provide details for <u>ALL</u> that apply</li>
+      <li> Email completed form to <u>oaroffice@colorado.edu</u></li>
+    </ul>
+
+    <div id="list1" class="dropdown">
+      <button class="dropdown-button">Select Conditions</button>
+      <ul class="dropdown-content">
+        <li><input type="checkbox" value="special_food">Special Food</li>
+        <li><input type="checkbox" value="special_water"> Special Water</li>
+        <li><input type="checkbox" value="non_standard_cage_change"> Non-Standard Cage Change</li>
+        <li><input type="checkbox" value="alternate_light_cycle"> Alternate Light Cycle</li>
+        <li><input type="checkbox" value="other"> Other</li>
+        <li><input type="checkbox" value="100%_PI-_Managed"> 100% PI-Managed</li>
+      </ul>
+    </div> 
+
+    <table class="second-table">
+        <thead>
+          <tr>
+            <th id="tan-cell-condition">Condition</th>
+            <th id="tan-cell-provider">Provider</th>
+            <th class="tan-cell">Details</th>
+          </tr>
+        </thead>
+        <tbody id="selected-conditions"></tbody> </table>
+
+
+<script src="scf.js"></script>
+</body>
+</html>

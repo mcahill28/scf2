@@ -1,0 +1,178 @@
+body {
+    background-color: white;
+    margin-top: -10px;
+    padding: 0px;
+
+}
+
+h1 {
+    font-family: arial;
+    color: black;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(202, 158, 76);
+}
+
+.first-table {
+  border-collapse: collapse;
+  border: none;
+}
+
+
+.no-border {
+  border: none;
+  font-weight: lighter;
+}
+
+h3 {
+  font-family: arial;
+  font-weight: 100;
+}
+
+.tan-cell {
+background-color: #faf0e6;
+}
+
+#tan-cell-condition {
+  background-color: #faf0e6;
+  width: 160px
+  }
+
+  #tan-cell-provider {
+    background-color: #faf0e6;
+    width: 60px
+    }
+
+.tan-header {
+  font-family: Helvetica;
+  background-color: #faf0e6;
+}
+
+table, th, td {
+    border: 1px solid;
+    font-family: arial;
+    margin-bottom: 20px;
+  }
+  th {
+    font-weight: bold;
+  }
+table {
+    font-family: arial;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+ul {
+  list-style:disc;
+  padding-left: 20px;
+  color: #007FFF;
+}
+
+#contact-input {
+  border-width:0px;
+  border:none;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 0px;
+}
+
+.smaller-td-font {
+  font-size: 14px;
+}
+
+textarea {
+  width: 420px;
+  height: auto;
+  resize: vertical;
+  overflow-y: hidden;
+  border: none;
+}
+
+.dropdown {
+  position: relative; /* Needed for proper positioning of content */
+  display: inline-block;
+  /* Increase width and height as needed */
+  width: 200px; /* Adjust width */
+  height: 50px; /* Adjust height */
+}
+
+.dropdown-button {
+  background-color: #faf0e6;
+  border: none;
+  padding: 7px;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  height: auto;
+  width: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1; /* Ensure the content is on top of other elements */
+  margin-top: 0;
+}
+
+.dropdown-content li {
+  padding: 10px; 
+  list-style: none;
+
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#selected-conditions {
+  max-height: 50px;
+}
+
+table.second-table td.provider {  /* Target "Provider" cell */
+  width: 40px;  /* Set fixed width */
+  overflow-y: auto;  /* Enable vertical scroll if content overflows */
+  position: absolute;
+  height: auto;
+  width: auto;
+}
+
+table.second-table td.provider ul {  /* Style dropdown list within cell */
+  max-height: 50px;  /* Set maximum height for list */
+  position: absolute;
+  height: auto;
+  width: auto;
+}
+
+table.second-table td.provider ul li {
+  white-space: nowrap; /* Prevent text wrapping within list items */
+  overflow: hidden; /* Hide overflow within list items */
+  text-overflow: ellipsis; /* Truncate text with ellipsis (...) */
+  width: 50px; /* Set fixed width for list items (adjust as needed) */
+  background-color: white;
+  position: absolute;
+  height: auto;
+  width: auto;
+}
+
+/* Style the "Details" cell (optional) */
+.second-table td.details {
+  /* Adjust width and height as desired */
+  width: 100%; /* Set width to 100% of cell */
+  height: 100%; /* Example height (adjust as needed) */
+  /* Optional: Set padding and border styles */
+  padding: 2px; /* Adjust padding for spacing */
+  border: 1px solid #ccc; /* Add a border */
+}
+
+/* Style the input box within the "Details" cell */
+table.second-table td.details input {
+  /* Set input styles for full width and height */
+  width: 100%; /* Set input width to 100% of cell */
+  height: 100%; /* Set input height to 100% of cell */
+  box-sizing: border-box; /* Ensure padding/border included in sizing */
+  background-color: transparent; /* Set clear background for the textbox */
+  /* Optional: Set additional input styles (font, border, etc.) */
+}
